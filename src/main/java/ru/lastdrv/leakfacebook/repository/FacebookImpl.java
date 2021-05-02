@@ -2,7 +2,7 @@ package ru.lastdrv.leakfacebook.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.lastdrv.leakfacebook.model.Facebook;
+import ru.lastdrv.leakfacebook.model.FacebookEntity;
 import ru.lastdrv.leakfacebook.service.FacebookService;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public class FacebookImpl implements FacebookService {
     }
 
     @Override
-    public List<Facebook> getTenFacebook(int limit) {
+    public List<FacebookEntity> getLimitedFacebook(int limit) {
         return facebookRepo.getFacebook(limit);
     }
 }

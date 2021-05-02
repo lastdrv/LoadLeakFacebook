@@ -1,20 +1,16 @@
 package ru.lastdrv.leakfacebook.model;
 
 import lombok.AccessLevel;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Getter
-@Setter
+@Data
 @Entity
-@EqualsAndHashCode
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Facebook {
+public class FacebookEntity {
     @Id
     long phone;
     long id;
