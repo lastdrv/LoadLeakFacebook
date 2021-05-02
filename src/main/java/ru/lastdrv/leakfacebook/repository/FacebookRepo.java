@@ -1,10 +1,10 @@
-package ru.lastdrv.repository;
+package ru.lastdrv.leakfacebook.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import ru.lastdrv.model.Facebook;
+import ru.lastdrv.leakfacebook.model.Facebook;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ru.lastdrv.model;
+package ru.lastdrv.leakfacebook.model;
 
 import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
