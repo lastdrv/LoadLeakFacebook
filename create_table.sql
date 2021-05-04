@@ -10,9 +10,12 @@ create table test.facebook
     status      varchar(100) null,
     work        varchar(500) null,
     date        varchar(100) null,
-    unknown     varchar(500) null,
+    email       varchar(500) null,
     birthday    varchar(100) null
 );
 
 create index facebook_phone_IDX
     on test.facebook (phone);
+
+create index facebook_email_index
+    on test.facebook (email);

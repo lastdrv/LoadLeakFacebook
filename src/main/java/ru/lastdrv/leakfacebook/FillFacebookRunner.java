@@ -78,7 +78,7 @@ public class FillFacebookRunner implements ApplicationRunner {
         facebookEntity.setStatus(csvData.getStatus());
         facebookEntity.setWork(csvData.getWork());
         facebookEntity.setDate(csvData.getDatePart1() + ":" + csvData.getDatePart2() + ":" + csvData.getDatePart3());
-        facebookEntity.setUnknown(csvData.getUnknown());
+        facebookEntity.setEmail(csvData.getEmail());
         facebookEntity.setBirthday(csvData.getBirthday());
         return facebookEntity;
     }

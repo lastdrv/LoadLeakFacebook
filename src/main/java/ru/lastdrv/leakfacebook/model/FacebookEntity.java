@@ -24,6 +24,6 @@ public class FacebookEntity {
     String status;
     String work;
     String date;
-    String unknown;
+    String email;
     String birthday;
 }

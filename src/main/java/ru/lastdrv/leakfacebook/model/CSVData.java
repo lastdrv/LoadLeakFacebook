@@ -44,8 +44,8 @@ public class CSVData {
     @JsonProperty("date_part_3")
     String datePart3;
 
-    @JsonProperty("unknown")
-    String unknown;
+    @JsonProperty("email")
+    String email;
 
     @JsonProperty("birthday")
     String birthday;
@@ -65,9 +65,10 @@ public class CSVData {
                 .addColumn("date_part_1", CsvSchema.ColumnType.STRING)
                 .addColumn("date_part_2", CsvSchema.ColumnType.STRING)
                 .addColumn("date_part_3", CsvSchema.ColumnType.STRING)
-                .addColumn("unknown", CsvSchema.ColumnType.STRING)
+                .addColumn("email", CsvSchema.ColumnType.STRING)
                 .addColumn("birthday", CsvSchema.ColumnType.STRING)
                 .setColumnSeparator(':')
+                .disableQuoteChar()
                 .build();
     }
 }
