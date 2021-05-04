@@ -28,8 +28,8 @@ public class CSVData {
     @JsonProperty("city")
     String city;
 
-    @JsonProperty("restrict")
-    String restrict;
+    @JsonProperty("region")
+    String region;
 
     @JsonProperty("status")
     String status;
@@ -59,7 +59,7 @@ public class CSVData {
                 .addColumn("second_name", CsvSchema.ColumnType.STRING)
                 .addColumn("sex", CsvSchema.ColumnType.STRING)
                 .addColumn("city", CsvSchema.ColumnType.STRING)
-                .addColumn("restrict", CsvSchema.ColumnType.STRING)
+                .addColumn("region", CsvSchema.ColumnType.STRING)
                 .addColumn("status", CsvSchema.ColumnType.STRING)
                 .addColumn("work", CsvSchema.ColumnType.STRING)
                 .addColumn("date_part_1", CsvSchema.ColumnType.STRING)

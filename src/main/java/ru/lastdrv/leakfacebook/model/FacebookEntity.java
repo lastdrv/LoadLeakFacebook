@@ -6,9 +6,11 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @Entity
+@Table(name="facebook")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class FacebookEntity {
     @Id
@@ -18,7 +20,7 @@ public class FacebookEntity {
     String secondName;
     String sex;
     String city;
-    String restrict;
+    String region;
     String status;
     String work;
     String date;

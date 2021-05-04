@@ -1,11 +1,11 @@
 package ru.lastdrv.leakfacebook.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.lastdrv.leakfacebook.model.FacebookEntity;
 import ru.lastdrv.leakfacebook.repository.FacebookRepo;
-
-import java.util.List;
 
 @Service
 public class FacebookService {
@@ -16,7 +16,9 @@ public class FacebookService {
         this.facebookRepo = facebookRepo;
     }
 
-    public List<FacebookEntity> getLimitedFacebook(int limit) {
-        return facebookRepo.getFacebook(limit);
+    @Modifying
+    @Transactional
+    public void saveAll(Iterable<FacebookEntity> facebookEntities) {
+        facebookRepo.saveAll(facebookEntities);
     }
 }
